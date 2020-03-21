@@ -543,18 +543,11 @@ void ShoppingCart::on_pushButtonBackMain_clicked()
 /************************************************************
 * on_pushButton_Checkout_clicked()
 * ----------------------------------------------------------
-* This method is activated when the "Place Order" button is clicked.  It
- * first checks to make sure the ccName matches the Company field in the
- * customers database table.  If there is no match, then the process for
- * saving the order stops.  If there is a match, then the member variables
- * that require conversion are done.  After conversions are made, the
- * input values from the form are stored into the 'orders' database table.
- * The QMessageBox opens to confirm the order was saved.  When the message
- * box is closed, the orderWindow dialog is closed and the productWindow is
- * active.
+* Stores the customer's purchase into the database
 ************************************************************/
 void ShoppingCart::on_pushButton_Checkout_clicked()
 {
+
     //    bool querySuccess = false;
     //    QSqlQuery query(*database);
     //    querySuccess = database->PlacingOrder(customerID, qtyPurchased, date);
